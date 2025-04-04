@@ -1,0 +1,426 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Origin;
+  src: url(../font/type.ttf);
+}
+@font-face {
+  font-family: Origin Sans;
+  src: url(../font/regular.ttf);
+}
+body {
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.gear .list.selected {
+  transition: all 0.3s ease; /* animasyon için geçiş efekti */
+}
+
+.gear .list.selected:hover {
+  transform: scale(1.05); /* hover efektinde biraz büyütme */
+}
+
+#app {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+}
+
+.left {
+  position: absolute;
+  width: 7.2838rem;
+  height: 1.6831rem;
+  left: 108rem;
+  top: 2.5rem;
+}
+.left .ms {
+  position: absolute;
+  width: 1.0625rem;
+  height: 1.3125rem;
+  left: 2.1rem;
+  top: 0.21rem;
+  font-family: "Origin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.3125rem;
+  text-align: right;
+  color: #CBCBCB;
+}
+.left .online {
+  position: absolute;
+  width: 1.0625rem;
+  height: 1.3125rem;
+  left: 7.1rem;
+  top: 0.22rem;
+  font-family: "Origin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.3125rem;
+  text-align: right;
+  color: #CBCBCB;
+}
+.left .job {
+  position: absolute;
+  width: 1.0625rem;
+  height: 1.3125rem;
+  left: 3.7rem;
+  top: 3.3rem;
+  color: #8E8E8E;
+  font-family: Origin Sans;
+  font-size: 1.5375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.left .job > p {
+  position: absolute;
+  top: -0.2rem;
+  left: -5.7rem;
+  width: 7rem;
+  background: linear-gradient(90deg, #ff9100 0%, #f7f7f7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+  text-align: right;
+  font-family: Origin Sans;
+  font-size: 1.5375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.left .cash {
+  position: absolute;
+  width: 1.0625rem;
+  height: 1.3125rem;
+  left: 2.9rem;
+  top: 7.9rem;
+  color: #8E8E8E;
+  text-align: right;
+  font-family: Origin Sans;
+  font-size: 1.5375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.left .cash > p {
+  position: absolute;
+  top: -0.2rem;
+  left: -4.8rem;
+  width: 7rem;
+  background: linear-gradient(90deg, #6adcff 0%, #f7f7f7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+  text-align: right;
+  font-family: Origin Sans;
+  font-size: 1.5375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.gear {
+  position: absolute;
+  overflow: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  display: inline-flex;
+  width: 4.1rem;
+  height: 2rem;
+  top: 52.5rem;
+  left: 105.8rem;
+  z-index: 10000000000000000000;
+}
+.gear::-webkit-scrollbar {
+  display: none;
+}
+.gear .list {
+  position: relative;
+  display: flex;
+  width: 0.14213rem;
+  height: 0.5685rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  left: -0.15rem;
+  top: 1.15rem;
+}
+.gear .list > p {
+  position: absolute;
+  top: -3rem;
+  color: #585858;
+  text-align: center;
+  font-family: Origin Sans;
+  font-size: 1.61013rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.speedometer {
+  position: absolute;
+  top: 47.5rem;
+  left: 97rem;
+}
+.speedometer .type {
+  position: absolute;
+  width: 1.8125rem;
+  height: 1.25rem;
+  top: 12rem;
+  left: 10.03rem;
+  font-family: "Origin";
+  font-style: normal;
+  font-weight: 550;
+  font-size: 1.3865rem;
+  line-height: 1.25rem;
+  text-align: center;
+  color: #878686;
+}
+.speedometer .speed {
+  position: absolute;
+  width: 6rem;
+  height: 1.25rem;
+  top: 6.6rem;
+  left: 8.1rem;
+  color: #E1E1E1;
+  text-align: center;
+  font-family: Origin Sans;
+  letter-spacing: 0.3rem;
+  font-size: 6.27375rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.speedometer .fuel {
+  position: absolute;
+  width: 2.5rem;
+  height: 1.25rem;
+  top: 11.7rem;
+  left: 0.5rem;
+  color: #F7D187;
+  text-align: center;
+  text-shadow: 0px 0px 11.0899105072px rgba(9, 9, 9, 0.92);
+  font-family: Origin Sans;
+  font-size: 1.32338rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@keyframes moveIn {
+  0% {
+    transform: translate(-100%, -100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+.map {
+  position: absolute;
+  width: 19.5rem;
+  height: 11.6875rem;
+  left: 3.125rem;
+  top: 51.5625rem;
+}
+
+.hud-hunger {
+  position: absolute;
+  width: 6.0294rem;
+  height: 1.3456rem;
+  transition: left 0.5s, top 0.5s;
+}
+.hud-hunger .load {
+  position: absolute;
+  top: 0.85rem;
+  left: 1.9rem;
+  overflow: hidden;
+  transition: 0.47s all;
+}
+
+.hud-stress {
+  position: absolute;
+  width: 3.875rem;
+  height: 3.025rem;
+  animation: moveIn 0.5s forwards;
+}
+.hud-stress .load {
+  position: absolute;
+  top: 0.55rem;
+  left: 0rem;
+  overflow: hidden;
+  transition: 0.47s all;
+}
+
+.hud-water {
+  position: absolute;
+  width: 5.6875rem;
+  height: 1.3456rem;
+  transition: left 0.5s, top 0.5s;
+}
+.hud-water .load {
+  position: absolute;
+  top: 0.85rem;
+  left: 0.9rem;
+  overflow: hidden;
+  transition: 0.47s all;
+}
+
+.hud-armor {
+  position: absolute;
+  width: 3.875rem;
+  height: 3.025rem;
+}
+.hud-armor .load {
+  position: absolute;
+  top: 0.85rem;
+  left: 1.55rem;
+  overflow: hidden;
+  transition: 0.47s all;
+}
+
+.hud-oxygen {
+  position: absolute;
+  width: 3.875rem;
+  height: 3.025rem;
+}
+.hud-oxygen .load {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  overflow: hidden;
+  transition: 0.47s all;
+}
+
+.hud-health {
+  position: absolute;
+  width: 3.875rem;
+  height: 3.025rem;
+}
+.hud-health .load {
+  position: absolute;
+  top: 0.85rem;
+  left: 0.85rem;
+  overflow: hidden;
+  transition: 0.47s all;
+}
+
+html {
+  font-size: 16px;
+}
+
+@media screen and (width: 3440px) and (height: 1440px) {
+  html {
+    font-size: 21.5px;
+  }
+}
+@media screen and (width: 4096px) and (height: 2160px) {
+  html {
+    font-size: 31px;
+  }
+}
+@media screen and (width: 2560px) and (height: 1440px) {
+  html {
+    font-size: 21.5px;
+  }
+  .map {
+    left: 3rem;
+    top: 51.15rem;
+  }
+}
+@media screen and (width: 1920px) and (height: 1200px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (width: 1920px) and (height: 1200px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (width: 1920px) and (height: 1440px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (width: 1600px) and (height: 1024px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (width: 1440px) and (height: 900px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media screen and (width: 1680px) and (height: 1050px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (width: 1600px) and (height: 900px) {
+  html {
+    font-size: 13.3px;
+  }
+}
+@media screen and (width: 1600px) and (height: 1024px) {
+  html {
+    font-size: 13.3px;
+  }
+}
+@media screen and (width: 1768px) and (height: 992px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (width: 1366px) and (height: 768px) {
+  html {
+    font-size: 11.3px;
+  }
+}
+@media screen and (width: 1400px) and (height: 1050px) {
+  html {
+    font-size: 11.7px;
+  }
+}
+@media screen and (width: 1280px) and (height: 1024px) {
+  html {
+    font-size: 11.7px;
+  }
+}
+@media screen and (width: 1280px) and (height: 720px) {
+  html {
+    font-size: 11px;
+  }
+}
+@media screen and (width: 1024px) and (height: 768px) {
+  html {
+    font-size: 10.05px;
+  }
+}
+@media screen and (width: 832px) and (height: 624px) {
+  html {
+    font-size: 8.05px;
+  }
+}
+@media screen and (width: 800px) and (height: 600px) {
+  html {
+    font-size: 8px;
+  }
+}/*# sourceMappingURL=app.css.map */
