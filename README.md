@@ -49,7 +49,7 @@ Perfect for roleplay servers looking to provide a premium UI experience with com
 
 ## ⚙️ Installation
 
-1. **Download the resource** from the [releases page](https://github.com/yourusername/es-aurahud/releases)
+1. **Download the resource** from the [releases page](https://github.com/raiderss/es-aurahud/releases)
 2. **Extract the files** to your server's resources folder
 3. **Configure** the `main/shared.lua` file to match your server's needs
 4. **Add** `ensure es-aurahud` to your server.cfg
@@ -69,7 +69,7 @@ Config.SeatbeltControl = 'k' -- Seatbelt toggle key
 
 ## 📚 Documentation
 
-For full documentation, including all configuration options and API references, please visit our [Wiki](https://github.com/yourusername/es-aurahud/wiki).
+For full documentation, including all configuration options and API references, please visit our [Wiki](https://github.com/raiderss/es-aurahud/wiki).
 
 ## 🔄 Compatibility
 
@@ -94,7 +94,7 @@ Contributions are welcome! If you'd like to improve ES-AURAHUD:
 ## 🆘 Support
 
 For support, issues, or feature requests:
-- Create an [Issue](https://github.com/yourusername/es-aurahud/issues)
+- Create an [Issue](https://github.com/raiderss/es-aurahud/issues)
 - Join our [Discord](https://discord.gg/EkwWvFS)
 
 ## 📜 License
@@ -104,7 +104,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## 🔗 Links
 
 - [FiveM Forum](https://forum.cfx.re)
-- [Author's GitHub](https://github.com/yourusername)
+- [Author's GitHub](https://github.com/raiderss)
 - [Discord Community](https://discord.gg/EkwWvFS)
 
 ## 🏆 Credits
