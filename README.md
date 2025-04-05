@@ -94,7 +94,7 @@ Contributions are welcome! If you'd like to improve ES-AURAHUD:
 ## 🆘 Support
 
 For support, issues, or feature requests:
-- Create an [Issue](https://github.com/yourusername/es-aurahud/issues)
+- Create an [Issue](https://github.com/raiderss/es-aurahud/issues)
 - Join our [Discord](https://discord.gg/EkwWvFS)
 
 ## 📜 License
